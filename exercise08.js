@@ -13,13 +13,14 @@
 
 function tukarBesarKecil(kalimat) {
   // you can only write your code here!
+  var result = ''
   for (var i = 0 ; i < kalimat.length ; i ++) {
     if (kalimat[i] === kalimat[i].toLowerCase()) {
-      kalimat[i] = kalimat[i].toLowerCase()
+      result += kalimat[i].toUpperCase()
     } else {
-      kalimat[i] = kalimat[i].toLowerCase()
+      result += kalimat[i].toLowerCase()
     }
-  }return kalimat
+  }return result 
 }
 
 // TEST CASES
