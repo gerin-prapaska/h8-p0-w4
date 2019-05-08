@@ -12,6 +12,7 @@
 // modus, tampilkan nilai modus yang paling pertama muncul (dihitung dari kiri ke kanan). Dan apabila dialam modus hanya ada 
 // 1 nilai yang sama maka function akan me-return -1, Contohnya [1, 1, 1] adalah -1.
 // Code
+
 function createObj(arr,obj) {
   if ( arr.length > 0 ) {
     var key = arr.splice(0,1)
@@ -25,12 +26,8 @@ function createObj(arr,obj) {
 function cariModus(arr) {
   // you can only write your code here!
   var obj = {}
-  // for (var i = 0; i < arr.length; i ++) {
-  //   if (!obj[arr[i]]) obj[arr[i]] = 1
-  //   else obj[arr[i]] += 1
-  // }
   obj = createObj(arr, obj)
-  console.log(obj)
+
   var max = 0, noModus = true, modus
   for (var key in obj){
     if (obj[key]>max) {
